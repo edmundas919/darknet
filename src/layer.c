@@ -32,9 +32,9 @@ void free_layer(layer l)
 	if (l.scales)             free(l.scales);
 	if (l.scale_updates)      free(l.scale_updates);
 	if (l.weights)            free(l.weights);
-	if (l.weight_updates)     free(l.weight_updates);
+	if (l.align_bit_weights)  free(l.weight_updates);
     if (l.weights)            free(l.align_bit_weights);
-    if (l.weights)            free(l.mean_arr);
+    if (l.mean_arr)           free(l.mean_arr);
 	if (l.delta)              free(l.delta);
 	if (l.output)             free(l.output);
 	if (l.squared)            free(l.squared);
